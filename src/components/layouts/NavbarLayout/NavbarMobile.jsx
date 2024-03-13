@@ -13,7 +13,17 @@ const NavbarMobile = () => {
     <div className="container w-full mx-auto bg-black">
       <Navbar>
         <ButtonHamburger color="white" onClick={handleHamburger} />
-        {listHamburger ? <NavbarList /> : ""}
+        <div className="absolute right-5 top-20 bg-white z-50">
+          {listHamburger ? (
+            <Navbar.NavbarList
+              orientation="flex-col"
+              fontColor="text-black"
+              size="px-5 py-2"
+            />
+          ) : (
+            ""
+          )}
+        </div>
         <Navbar.NavbarName>
           Lumin
           <BiAperture className="self-center" />
@@ -23,17 +33,4 @@ const NavbarMobile = () => {
     </div>
   );
 };
-
-const NavbarList = () => {
-  return (
-    <ul className="text-white">
-      <li>Home</li>
-      <li>Portofolio</li>
-      <li>Galery</li>
-      <li>AboutUs</li>
-    </ul>
-  );
-};
-
-NavbarMobile.NavbarList = NavbarList;
 export default NavbarMobile;

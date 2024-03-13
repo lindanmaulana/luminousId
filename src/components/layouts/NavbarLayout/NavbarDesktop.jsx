@@ -4,7 +4,7 @@ const NavbarDesktop = () => {
   return (
     <div className="container w-full mx-auto bg-black">
       <Navbar>
-        <Navbar.NavbarList />
+        <Navbar.NavbarList orientation="flex-wrap" fontColor="text-white" />
         <Navbar.NavbarName>
           Lumin
           <BiAperture className="self-center" />

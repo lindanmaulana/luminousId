@@ -7,9 +7,10 @@ const Navbar = (props) => {
   );
 };
 
-const NavbarList = () => {
+const NavbarList = (props) => {
+  const {orientation, fontColor, size} = props
   return (
-    <ul className="flex gap-2 text-white">
+    <ul className={`flex ${orientation} gap-2 ${fontColor} ${size}`}>
       <List>Home</List>
       <List>Portfolio</List>
       <List>Gallery</List>
