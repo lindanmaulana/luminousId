@@ -7,7 +7,7 @@ function App() {
       <header>
         <NavbarPage />
         <div className="container w-full mx-auto">
-          <div className="min-h-screen bg-[url('./assets/images/bg-home.jpg')] bg-cover bg-center">
+          <div className="min-h-screen bg-[url('./assets/images/bgHome.jpg')] bg-cover bg-center">
             <HomeSection />
           </div>
         </div>
