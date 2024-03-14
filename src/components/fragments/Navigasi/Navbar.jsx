@@ -1,7 +1,7 @@
 const Navbar = (props) => {
   const { children } = props;
   return (
-    <nav className="w-full flex justify-between items-center px-8 py-6 fixed top-0">
+    <nav className="w-full flex justify-between items-center px-8 py-6 fixed top-0 transition-all duration-1000 ease-in-out">
       {children}
     </nav>
   );

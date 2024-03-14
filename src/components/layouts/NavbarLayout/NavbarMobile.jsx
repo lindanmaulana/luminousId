@@ -13,11 +13,11 @@ const NavbarMobile = () => {
     <div className="container w-full mx-auto bg-black">
       <Navbar>
         <ButtonHamburger color="white" onClick={handleHamburger} />
-        <div className="absolute right-5 top-20 bg-white z-50 rounded-md">
+        <div className="absolute right-0 top-20 bg-[#503C3C] rounded-md">
           {listHamburger ? (
             <Navbar.NavbarList
               orientation="flex-col"
-              fontColor="text-black"
+              fontColor="text-white"
               size="px-5 py-2"
             />
           ) : (
