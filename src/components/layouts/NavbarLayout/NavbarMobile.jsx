@@ -13,7 +13,7 @@ const NavbarMobile = () => {
     <div className="container w-full mx-auto bg-black">
       <Navbar>
         <ButtonHamburger color="white" onClick={handleHamburger} />
-        <div className="absolute right-5 top-20 bg-white z-50">
+        <div className="absolute right-5 top-20 bg-white z-50 rounded-md">
           {listHamburger ? (
             <Navbar.NavbarList
               orientation="flex-col"

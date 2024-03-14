@@ -1,5 +1,5 @@
 import "./App.css";
-import HomeSection from "./components/fragments/Home/HomeSection"
+import HomeSection from "./components/fragments/Home/HomeSection";
 import NavbarPage from "./pages/NavbarPage";
 function App() {
   return (
